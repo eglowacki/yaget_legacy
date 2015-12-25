@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{9e5e93a5-a614-49fd-bc6a-643778659ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base Files">
+      <UniqueIdentifier>{3e57209e-6047-42e6-a40b-f009cf20285f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Precompiled.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Registrate.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\RegistrateModule.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\Precompiled.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\BaseRegistrate.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\RegistrateModule.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

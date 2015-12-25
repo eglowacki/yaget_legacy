@@ -1,0 +1,23 @@
+/////////////////////////////////////////////////////////////////////
+// Main.h
+//
+//  Copyright 04/03/2009 Edgar Glowacki.
+//
+//  Maintained by: Edgar
+//
+//  NOTES:
+//
+//
+//  #include "Main.h"
+//
+//////////////////////////////////////////////////////////////////////
+//! \file
+
+#ifndef WIN_MAIN_H
+#define WIN_MAIN_H
+#pragma once
+
+#include "Base.h"
+
+#endif // WIN_MAIN_H
+

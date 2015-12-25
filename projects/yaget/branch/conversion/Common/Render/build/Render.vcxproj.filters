@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Interface Files">
+      <UniqueIdentifier>{385dbbf9-e9c2-4d6b-bedf-3f720f2f0361}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{10fd25a4-d3da-40fd-8f28-fd3a07e2749a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base Files">
+      <UniqueIdentifier>{d2d0cf85-953b-4ac2-99df-2b48352bf6ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer Files">
+      <UniqueIdentifier>{34d2cd40-172f-4643-8760-2680b6466464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component Files">
+      <UniqueIdentifier>{bf2d2bef-4127-4d68-bdb3-1905c464a741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component Files\Widgets">
+      <UniqueIdentifier>{dc903e5f-bf6c-46f3-b09d-24587b7bfdf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component Files\Assets">
+      <UniqueIdentifier>{1ead5ec4-9c25-4bb9-9961-da738790f433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{55cb5420-f7f5-4285-aa7d-c1372335a0ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Built-In Assets">
+      <UniqueIdentifier>{0dd8d6a7-45b2-478f-b956-b2edb3d6d873}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\RenderModule.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Precompiled.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\RenderContext.cpp">
+      <Filter>Renderer Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Renderer.cpp">
+      <Filter>Renderer Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ComponentModel.cpp">
+      <Filter>Component Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ComponentView.cpp">
+      <Filter>Component Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Widgets\Axis.cpp">
+      <Filter>Component Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Widgets\BoundingBox.cpp">
+      <Filter>Component Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Widgets\Plane.cpp">
+      <Filter>Component Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Widgets\Presenters.cpp">
+      <Filter>Component Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Widgets\Ray.cpp">
+      <Filter>Component Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Widgets\ScreenQuad.cpp">
+      <Filter>Component Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Widgets\WireFrame.cpp">
+      <Filter>Component Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\GeometryAsset.cpp">
+      <Filter>Component Files\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\GeometryTextureAsset.cpp">
+      <Filter>Component Files\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MaterialAsset.cpp">
+      <Filter>Component Files\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ShaderAsset.cpp">
+      <Filter>Component Files\Assets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\RenderModule.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IComponentModel.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IComponentView.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Precompiled.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ComponentEnumsRender.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RenderBase.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ErrorHandler.h">
+      <Filter>Renderer Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\RenderContext.h">
+      <Filter>Renderer Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Renderer.h">
+      <Filter>Renderer Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ComponentModel.h">
+      <Filter>Component Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ComponentView.h">
+      <Filter>Component Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Widgets\Axis.h">
+      <Filter>Component Files\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Widgets\BoundingBox.h">
+      <Filter>Component Files\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Widgets\Plane.h">
+      <Filter>Component Files\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Widgets\Presenters.h">
+      <Filter>Component Files\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Widgets\Ray.h">
+      <Filter>Component Files\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Widgets\ScreenQuad.h">
+      <Filter>Component Files\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Widgets\WireFrame.h">
+      <Filter>Component Files\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\GeometryAsset.h">
+      <Filter>Component Files\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\GeometryTextureAsset.h">
+      <Filter>Component Files\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\MaterialAsset.h">
+      <Filter>Component Files\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ShaderAsset.h">
+      <Filter>Component Files\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\generated\Render\MissingGeometry.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\generated\Render\MissingMaterial.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\generated\Render\MissingShader.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\generated\Render\MissingTexture.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="..\source\Material.xsd">
+      <Filter>Component Files</Filter>
+    </Xsd>
+  </ItemGroup>
+  <ItemGroup>
+    <BuildIn_Assets Include="..\..\..\..\..\Repository\Assets\Default\Builtin\MissingGeometry.x">
+      <Filter>Built-In Assets</Filter>
+    </BuildIn_Assets>
+    <BuildIn_Assets Include="..\..\..\..\..\Repository\Assets\Default\Builtin\MissingMaterial.mat">
+      <Filter>Built-In Assets</Filter>
+    </BuildIn_Assets>
+    <BuildIn_Assets Include="..\..\..\..\..\Repository\Assets\Default\Builtin\MissingShader.fx">
+      <Filter>Built-In Assets</Filter>
+    </BuildIn_Assets>
+    <BuildIn_Assets Include="..\..\..\..\..\Repository\Assets\Default\Builtin\MissingTexture.tga">
+      <Filter>Built-In Assets</Filter>
+    </BuildIn_Assets>
+  </ItemGroup>
+</Project>

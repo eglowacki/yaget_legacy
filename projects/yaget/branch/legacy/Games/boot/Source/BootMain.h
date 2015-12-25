@@ -1,0 +1,23 @@
+/////////////////////////////////////////////////////////////////////
+// Main.h
+//
+//  Copyright 04/03/2009 Edgar Glowacki.
+//
+//  Maintained by: Edgar
+//
+//  NOTES:
+//
+//
+//  #include "BootMain.h"
+//
+//////////////////////////////////////////////////////////////////////
+//! \file
+
+#ifndef BOOT_MAIN_H
+#define BOOT_MAIN_H
+#pragma once
+
+#include "Base.h"
+
+#endif // BOOT_MAIN_H
+

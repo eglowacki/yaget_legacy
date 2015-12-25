@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CE78FEEA-5922-4D96-9F9D-F8B784854CE6}</ProjectGuid>
+    <RootNamespace>Render</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="..\..\..\BuildRules\BuildInAssets.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\BuildRules\Release.props" />
+    <Import Project="..\..\..\BuildRules\Objects.props" />
+    <Import Project="..\..\..\BuildRules\Components.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\BuildRules\Debug.props" />
+    <Import Project="..\..\..\BuildRules\Objects.props" />
+    <Import Project="..\..\..\BuildRules\Components.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;$(YAGET_ROOT_FOLDER)\Packages\DirectX9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MAKINGDLL_RENDER;D3D_DEBUG_INFO;UTIL_CLASS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9$(PACKAGE_DEBUG_SUFFIX).lib;dxerr9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(YAGET_ROOT_FOLDER)\Packages\DirectX9\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;$(YAGET_ROOT_FOLDER)\Packages\DirectX9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MAKINGDLL_RENDER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <PerUserRedirection>true</PerUserRedirection>
+      <AdditionalDependencies>d3d9.lib;d3dx9$(PACKAGE_DEBUG_SUFFIX).lib;dxerr9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(YAGET_ROOT_FOLDER)\Packages\DirectX9\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\RenderModule.cpp" />
+    <ClCompile Include="..\source\Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\source\RenderContext.cpp" />
+    <ClCompile Include="..\source\Renderer.cpp" />
+    <ClCompile Include="..\source\ComponentModel.cpp" />
+    <ClCompile Include="..\source\ComponentView.cpp" />
+    <ClCompile Include="..\source\Widgets\Axis.cpp" />
+    <ClCompile Include="..\source\Widgets\BoundingBox.cpp" />
+    <ClCompile Include="..\source\Widgets\Plane.cpp" />
+    <ClCompile Include="..\source\Widgets\Presenters.cpp" />
+    <ClCompile Include="..\source\Widgets\Ray.cpp" />
+    <ClCompile Include="..\source\Widgets\ScreenQuad.cpp" />
+    <ClCompile Include="..\source\Widgets\WireFrame.cpp" />
+    <ClCompile Include="..\source\GeometryAsset.cpp" />
+    <ClCompile Include="..\source\GeometryTextureAsset.cpp" />
+    <ClCompile Include="..\source\MaterialAsset.cpp" />
+    <ClCompile Include="..\source\ShaderAsset.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\RenderModule.h" />
+    <ClInclude Include="..\include\IComponentModel.h" />
+    <ClInclude Include="..\include\IComponentView.h" />
+    <ClInclude Include="..\source\Precompiled.h" />
+    <ClInclude Include="..\include\ComponentEnumsRender.h" />
+    <ClInclude Include="..\include\RenderBase.h" />
+    <ClInclude Include="..\source\ErrorHandler.h" />
+    <ClInclude Include="..\source\RenderContext.h" />
+    <ClInclude Include="..\source\Renderer.h" />
+    <ClInclude Include="..\source\ComponentModel.h" />
+    <ClInclude Include="..\source\ComponentView.h" />
+    <ClInclude Include="..\source\Widgets\Axis.h" />
+    <ClInclude Include="..\source\Widgets\BoundingBox.h" />
+    <ClInclude Include="..\source\Widgets\Plane.h" />
+    <ClInclude Include="..\source\Widgets\Presenters.h" />
+    <ClInclude Include="..\source\Widgets\Ray.h" />
+    <ClInclude Include="..\source\Widgets\ScreenQuad.h" />
+    <ClInclude Include="..\source\Widgets\WireFrame.h" />
+    <ClInclude Include="..\source\GeometryAsset.h" />
+    <ClInclude Include="..\source\GeometryTextureAsset.h" />
+    <ClInclude Include="..\source\MaterialAsset.h" />
+    <ClInclude Include="..\source\ShaderAsset.h" />
+    <ClInclude Include="..\..\..\generated\Render\MissingGeometry.h" />
+    <ClInclude Include="..\..\..\generated\Render\MissingMaterial.h" />
+    <ClInclude Include="..\..\..\generated\Render\MissingShader.h" />
+    <ClInclude Include="..\..\..\generated\Render\MissingTexture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="..\source\Material.xsd">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Xsd>
+  </ItemGroup>
+  <ItemGroup>
+    <BuildIn_Assets Include="..\..\..\..\..\Repository\Assets\Default\Builtin\MissingGeometry.x" />
+    <BuildIn_Assets Include="..\..\..\..\..\Repository\Assets\Default\Builtin\MissingMaterial.mat" />
+    <BuildIn_Assets Include="..\..\..\..\..\Repository\Assets\Default\Builtin\MissingShader.fx" />
+    <BuildIn_Assets Include="..\..\..\..\..\Repository\Assets\Default\Builtin\MissingTexture.tga" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\Material.xsx">
+      <DependentUpon>Material.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\..\BuildRules\BuildInAssets.targets" />
+  </ImportGroup>
+</Project>

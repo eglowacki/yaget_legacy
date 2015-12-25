@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScriptLua", "ScriptLua.vcproj", "{A02E5D7F-16DD-46DB-8999-D91F3C01A21D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UT_ScriptLua", "UT_ScriptLua.vcproj", "{D60F2769-065E-43D5-BF60-614A737C1810}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A02E5D7F-16DD-46DB-8999-D91F3C01A21D} = {A02E5D7F-16DD-46DB-8999-D91F3C01A21D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A02E5D7F-16DD-46DB-8999-D91F3C01A21D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A02E5D7F-16DD-46DB-8999-D91F3C01A21D}.Debug|Win32.Build.0 = Debug|Win32
+		{A02E5D7F-16DD-46DB-8999-D91F3C01A21D}.Release|Win32.ActiveCfg = Release|Win32
+		{A02E5D7F-16DD-46DB-8999-D91F3C01A21D}.Release|Win32.Build.0 = Release|Win32
+		{D60F2769-065E-43D5-BF60-614A737C1810}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D60F2769-065E-43D5-BF60-614A737C1810}.Debug|Win32.Build.0 = Debug|Win32
+		{D60F2769-065E-43D5-BF60-614A737C1810}.Release|Win32.ActiveCfg = Release|Win32
+		{D60F2769-065E-43D5-BF60-614A737C1810}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

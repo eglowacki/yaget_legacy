@@ -1,0 +1,55 @@
+// --------------------------------------------------------
+// Simulator.idl
+// Defines protocols for communications between any process
+// --------------------------------------------------------
+type omega::Frame "utilities/frame.h";
+type eg::Vector3 "Math/Vector.h";
+
+
+protocol SimulatorProtocol
+{
+    // implemented by this simulator
+    // and this is called connection object
+    interface ISimulatorRequest
+    {
+        // Add or remove any instance. Based on some game visibility
+        // rules, it will notify and/or update any objects in view.
+        method Add(uint64 objectId);
+        method Remove(uint64 objectId);
+    };
+
+    interface ISimulatorReply
+    {
+    };
+};
+
+
+// Anybody can recive events from Simulator
+protocol SimulatorObserverProtocol
+{
+    interface ISimulatorObserverRequest
+    {
+        // Set how big area to observ
+        method SetObserverInfo(float32 radius);
+    };
+
+    interface ISimulatorObserverReply
+    {
+        // management
+        // this assumes that data on how to create this object
+        // is on Observer side (file, memory stream, etc).
+        method Add(uint64 objectId);
+		//! Add new object and load data from stream
+		//! using streamName to look it up in VFS
+        method Add(uint64 objectId, string streamName);
+        // Add new object and use frame as input data (stream)
+        method Add(uint64 objectId, omega::Frame frame);
+        method Remove(uint64 objectId);
+
+		// This represents unique id for this client.
+		// It is used wiht replicate interface to attch Replicate
+		// connection to this observerId interface
+		method ObserverId(uint64 observerId);
+    };
+};
+

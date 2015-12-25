@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio - 30 Day Trial Edition 7.1.4.1284 (http://www.liquid-technologies.com) -->
+<Material2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="P:\Yaget\branch\main\Modules\Renderer\DirectX\include\Material2.xsd">
+  <Inputs>
+    <Input>
+      <Value>string</Value>
+      <Type>int</Type>
+      <Pass>924030001</Pass>
+    </Input>
+  </Inputs>
+</Material2>

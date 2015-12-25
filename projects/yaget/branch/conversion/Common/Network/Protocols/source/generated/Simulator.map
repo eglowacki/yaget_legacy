@@ -1,0 +1,8 @@
+1b3e33b8	ISimulatorObserverRequest  void SetObserverInfo ( omega::float32 radius );
+7a47f0d	ISimulatorObserverReply  void Add ( omega::uint64 objectId );
+fc6e65a0	ISimulatorObserverReply  void Add ( omega::uint64 objectId, const omega::OString& streamName );
+c02c2735	ISimulatorObserverReply  void Add ( omega::uint64 objectId, const omega::Frame& frame );
+3cf56655	ISimulatorObserverReply  void Remove ( omega::uint64 objectId );
+19afef56	ISimulatorObserverReply  void ObserverId ( omega::uint64 observerId );
+1716f091	ISimulatorRequest  void Add ( omega::uint64 objectId );
+50e8fde5	ISimulatorRequest  void Remove ( omega::uint64 objectId );

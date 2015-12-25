@@ -1,0 +1,9 @@
+75dcfa38	IReplicateRequest  void AttachToObserver ( omega::uint64 observerId );
+fe6c9474	IReplicateReply  void Replicate ( omega::uint64 oId, omega::uint32 cId, const omega::OString& propName, bool value );
+82298879	IReplicateReply  void Replicate ( omega::uint64 oId, omega::uint32 cId, const omega::OString& propName, omega::float32 value );
+6698627e	IReplicateReply  void Replicate ( omega::uint64 oId, omega::uint32 cId, const omega::OString& propName, omega::int32 value );
+aa8963c2	IReplicateReply  void Replicate ( omega::uint64 oId, omega::uint32 cId, const omega::OString& propName, omega::uint32 value );
+6b13e085	IReplicateReply  void Replicate ( omega::uint64 oId, omega::uint32 cId, const omega::OString& propName, const eg::Vector2& value );
+6b13e185	IReplicateReply  void Replicate ( omega::uint64 oId, omega::uint32 cId, const omega::OString& propName, const eg::Vector3& value );
+6b13e285	IReplicateReply  void Replicate ( omega::uint64 oId, omega::uint32 cId, const omega::OString& propName, const eg::Vector4& value );
+5c64f8bf	IReplicateReply  void Replicate ( omega::uint64 oId, omega::uint32 cId, const omega::OString& propName, const omega::OString& value );

@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Render", "Render.vcproj", "{CE78FEEA-5922-4D96-9F9D-F8B784854CE6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{42A73A4B-9E56-4FD8-98EA-D342D9D10999} = {42A73A4B-9E56-4FD8-98EA-D342D9D10999}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Componnents", "Componnents", "{A0DFA122-77D7-4F23-A5C1-F47619CC798D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Math", "..\..\Math\build\Math.vcproj", "{40A67A5C-56F7-4538-97BC-C6BAAF5A98FD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utility", "..\..\Utility\build\Utility.vcproj", "{50B550FA-6F86-4CDE-9F85-4A1780FC5AD2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{40A67A5C-56F7-4538-97BC-C6BAAF5A98FD} = {40A67A5C-56F7-4538-97BC-C6BAAF5A98FD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Registrate", "..\..\Registrate\build\Registrate.vcproj", "{42A73A4B-9E56-4FD8-98EA-D342D9D10999}"
+	ProjectSection(ProjectDependencies) = postProject
+		{50B550FA-6F86-4CDE-9F85-4A1780FC5AD2} = {50B550FA-6F86-4CDE-9F85-4A1780FC5AD2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Objects", "..\..\Objects\build\Objects.vcproj", "{E1BFD4F3-84B5-4828-894C-422D0A0DD105}"
+	ProjectSection(ProjectDependencies) = postProject
+		{42A73A4B-9E56-4FD8-98EA-D342D9D10999} = {42A73A4B-9E56-4FD8-98EA-D342D9D10999}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Components", "..\..\Components\build\Components.vcproj", "{E45C5664-D146-4768-8A4D-D809D776C9B0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{42A73A4B-9E56-4FD8-98EA-D342D9D10999} = {42A73A4B-9E56-4FD8-98EA-D342D9D10999}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE78FEEA-5922-4D96-9F9D-F8B784854CE6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE78FEEA-5922-4D96-9F9D-F8B784854CE6}.Debug|Win32.Build.0 = Debug|Win32
+		{CE78FEEA-5922-4D96-9F9D-F8B784854CE6}.Release|Win32.ActiveCfg = Release|Win32
+		{CE78FEEA-5922-4D96-9F9D-F8B784854CE6}.Release|Win32.Build.0 = Release|Win32
+		{40A67A5C-56F7-4538-97BC-C6BAAF5A98FD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{40A67A5C-56F7-4538-97BC-C6BAAF5A98FD}.Debug|Win32.Build.0 = Debug|Win32
+		{40A67A5C-56F7-4538-97BC-C6BAAF5A98FD}.Release|Win32.ActiveCfg = Release|Win32
+		{40A67A5C-56F7-4538-97BC-C6BAAF5A98FD}.Release|Win32.Build.0 = Release|Win32
+		{50B550FA-6F86-4CDE-9F85-4A1780FC5AD2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{50B550FA-6F86-4CDE-9F85-4A1780FC5AD2}.Debug|Win32.Build.0 = Debug|Win32
+		{50B550FA-6F86-4CDE-9F85-4A1780FC5AD2}.Release|Win32.ActiveCfg = Release|Win32
+		{50B550FA-6F86-4CDE-9F85-4A1780FC5AD2}.Release|Win32.Build.0 = Release|Win32
+		{42A73A4B-9E56-4FD8-98EA-D342D9D10999}.Debug|Win32.ActiveCfg = Debug|Win32
+		{42A73A4B-9E56-4FD8-98EA-D342D9D10999}.Debug|Win32.Build.0 = Debug|Win32
+		{42A73A4B-9E56-4FD8-98EA-D342D9D10999}.Release|Win32.ActiveCfg = Release|Win32
+		{42A73A4B-9E56-4FD8-98EA-D342D9D10999}.Release|Win32.Build.0 = Release|Win32
+		{E1BFD4F3-84B5-4828-894C-422D0A0DD105}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E1BFD4F3-84B5-4828-894C-422D0A0DD105}.Debug|Win32.Build.0 = Debug|Win32
+		{E1BFD4F3-84B5-4828-894C-422D0A0DD105}.Release|Win32.ActiveCfg = Release|Win32
+		{E1BFD4F3-84B5-4828-894C-422D0A0DD105}.Release|Win32.Build.0 = Release|Win32
+		{E45C5664-D146-4768-8A4D-D809D776C9B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E45C5664-D146-4768-8A4D-D809D776C9B0}.Debug|Win32.Build.0 = Debug|Win32
+		{E45C5664-D146-4768-8A4D-D809D776C9B0}.Release|Win32.ActiveCfg = Release|Win32
+		{E45C5664-D146-4768-8A4D-D809D776C9B0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40A67A5C-56F7-4538-97BC-C6BAAF5A98FD} = {A0DFA122-77D7-4F23-A5C1-F47619CC798D}
+		{50B550FA-6F86-4CDE-9F85-4A1780FC5AD2} = {A0DFA122-77D7-4F23-A5C1-F47619CC798D}
+		{42A73A4B-9E56-4FD8-98EA-D342D9D10999} = {A0DFA122-77D7-4F23-A5C1-F47619CC798D}
+		{E1BFD4F3-84B5-4828-894C-422D0A0DD105} = {A0DFA122-77D7-4F23-A5C1-F47619CC798D}
+		{E45C5664-D146-4768-8A4D-D809D776C9B0} = {A0DFA122-77D7-4F23-A5C1-F47619CC798D}
+	EndGlobalSection
+EndGlobal

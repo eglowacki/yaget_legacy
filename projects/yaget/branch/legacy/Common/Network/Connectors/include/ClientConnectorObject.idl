@@ -1,0 +1,12 @@
+import "Simulator";
+import "Replicate";
+
+namespace eg
+{
+    object ClientConnectorObject
+    {
+        supports ISimulatorObserverReply;
+        supports IReplicateReply;
+    };
+}
+

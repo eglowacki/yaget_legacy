@@ -1,0 +1,22 @@
+/////////////////////////////////////////////////////////////////////
+// Main.h
+//
+//  Copyright 12/20/2008 Edgar Glowacki.
+//
+//  Maintained by: Edgar
+//
+//  NOTES: Thread test
+//
+//
+//  #include "Main.h"
+//
+//////////////////////////////////////////////////////////////////////
+//! \file
+
+#ifndef THREAD_MAIN_H
+#define THREAD_MAIN_H
+#pragma once
+
+
+#endif // THREAD_MAIN_H
+

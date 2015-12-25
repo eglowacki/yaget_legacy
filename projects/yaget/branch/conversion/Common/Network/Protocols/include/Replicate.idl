@@ -1,0 +1,37 @@
+// --------------------------------------------------------
+// Replicate.idl
+// Defines protocols for communications between any process
+// --------------------------------------------------------
+type omega::Frame "utilities/frame.h";
+type eg::Vector2 "Math/Vector.h";
+type eg::Vector3 "Math/Vector.h";
+type eg::Vector4 "Math/Vector.h";
+//type flo
+
+
+protocol ReplicateProtocol
+{
+    interface IReplicateRequest
+    {
+		//! This needs to be called before any data will be replicated to client
+		method AttachToObserver(uint64 observerId);
+    };
+
+    // implemented by reciving end (client in most cases
+    interface IReplicateReply
+    {
+        //! Replicate specific component
+        method Replicate(uint64 oId, uint32 cId, string propName, bool value);
+        method Replicate(uint64 oId, uint32 cId, string propName, float32 value);
+        method Replicate(uint64 oId, uint32 cId, string propName, int32 value);
+        method Replicate(uint64 oId, uint32 cId, string propName, uint32 value);
+        method Replicate(uint64 oId, uint32 cId, string propName, eg::Vector2 value);
+        method Replicate(uint64 oId, uint32 cId, string propName, eg::Vector3 value);
+        method Replicate(uint64 oId, uint32 cId, string propName, eg::Vector4 value);
+
+		//! This is catch me all method, but it will print warnin in a log
+		//! as a unoptimal method.
+        method Replicate(uint64 oId, uint32 cId, string propName, string value);
+    };
+};
+
