@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thinker", "src\Thinker.csproj", "{F4DA1DE7-48A2-45AC-94F1-91B81E8534E9}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "ThinkerContent", "content\ThinkerContent.contentproj", "{C4EA0402-C8CA-4CED-B987-EF7BA84BD8AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4DA1DE7-48A2-45AC-94F1-91B81E8534E9}.Debug|x86.ActiveCfg = Debug|x86
+		{F4DA1DE7-48A2-45AC-94F1-91B81E8534E9}.Debug|x86.Build.0 = Debug|x86
+		{F4DA1DE7-48A2-45AC-94F1-91B81E8534E9}.Release|x86.ActiveCfg = Release|x86
+		{F4DA1DE7-48A2-45AC-94F1-91B81E8534E9}.Release|x86.Build.0 = Release|x86
+		{C4EA0402-C8CA-4CED-B987-EF7BA84BD8AD}.Debug|x86.ActiveCfg = Debug|x86
+		{C4EA0402-C8CA-4CED-B987-EF7BA84BD8AD}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
