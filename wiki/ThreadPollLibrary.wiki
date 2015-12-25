@@ -1,0 +1,14 @@
+== Notes ==
+   * Entire !ThreadPool source is from CVS
+    * CVS: pserver:anonymous@threadpool.cvs.sourceforge.net:/cvsroot/threadpool (Password: NONE).
+    * [http://sourceforge.net/projects/threadpool web site].
+
+=== Build ===
+
+=== Using ===
+
+Adjust project properties:
+|| *Configuration* || *Property* || *Value* ||
+|| C/C++/General || Additional Include Directories || Inherits from Utility Prop ||
+|| Linker/General || Additional Library Directories || Inherits from Utility Prop ||
+|| Linker/Input || Additional Dependencies || ||

@@ -1,0 +1,29 @@
+=== Desription of Packages used by Yaget projects ===
+|| **Package Name** || **Used** || **Source Control** || **Web Site** || **Documentation** ||
+|| [BoostLibrary boost] || Yes || svn || http://www.boost.org || http://www.boost.org/libs/libraries.htm ||
+|| [UnitTestLibrary Unit Test++] || Yes || svn || http://unittest-cpp.sourceforge.net || http://unittest-cpp.sourceforge.net/UnitTest++.html ||
+
+=== Desription of some of Packages used by Muck Engine ===
+|| **Package Name** || **Used** || **Source Control** || **Web Site** || **Documentation** ||
+|| [AggLibrary Anti Grain Geometry] || Yes || cvs || http://antigrain.com || http://antigrain.com/doc/index.html ||
+|| [BoostLibrary boost] || Yes || cvs || http://www.boost.org || http://www.boost.org/libs/libraries.htm ||
+|| [BugslayerLibrary Bugslayer] || Yes || perforce || || ||
+|| [CxImageLibrary CxImage] || Yes || [http://www.xdp.it/download.htm download] || http://www.xdp.it || http://www.codeproject.com/bitmap/cximage.asp ||
+|| [DevILLibrary DevIL] || No || cvs || http://openil.sourceforge.net || ||
+|| [DirectX9] || Yes || [http://msdn.microsoft.com/directx/sdk download] || http://msdn.microsoft.com/directx || ||
+|| [FreeImageLibrary FreeImage] || No || cvs || http://freeimage.sourceforge.net || ||
+|| [FreeType2 Free Type 2] || No || cvs || http://www.freetype.org || ||
+|| [LokiLibrary loki] || Yes || cvs and perforce || || ||
+|| [LuaLibrary lua] || Yes || Download || http://www.lua.org/home.html || http://www.lua.org/docs.html ||
+|| [LuaBind Lua Bind] || Yes || cvs || http://www.rasterbar.com/products/luabind.html || http://www.rasterbar.com/products/luabind/docs.html ||
+|| [PThreadsWin32 pthreads-win32] || No || cvs || http://sourceware.org/pthreads-win32 || ||
+|| [BuildingMainLibraries wxWidgets] || Yes || cvs and perforce || http://www.wxwindows.org || http://www.wxwindows.org/docs ||
+|| [WxCodeLibrary wxCode] || No || cvs || http://wxcode.sourceforge.net || ||
+|| [ZLibLibrary zlib] || No || cvs || http://www.zlib.net || ||
+|| [ObjectInput ois] || Yes || cvs || http://www.wreckedgames.com/wiki/index.php/WreckedLibs:OIS || ||
+|| [RakNetLibrary RakNet] || Yes || Vault || http://www.jenkinssoftware.com || http://www.rakkarsoft.com/raknet/manual ||
+|| [ReplicaNETLibrary ReplicaNet] || ??? || Download || http://www.replicanet.com || ||
+|| [MySqlLibrary MySql] || ??? || Download || http://dev.mysql.com || http://dev.mysql.com/doc/ ||
+|| [ParticleLibrary Particles] || ??? || Download || http://www.particlesystems.org || http://www.particlesystems.org/Distrib/ParticleHelp_220.html ||
+|| [PantheiosLibrary Pantheios] || ??? || Download || http://pantheios.sourceforge.net || http://pantheios.sourceforge.net/doc/html/index.html ||
+|| [ThreadPollLibrary Thread Pool] || ??? || cvs|| http://sourceforge.net/projects/threadpool || ||

@@ -1,0 +1,166 @@
+Various Bits of Code Samples
+
+== Events Sample using Delegate ==
+Define an Event as follows:
+{{{
+struct PlaybackStartedEvent
+{
+    PlaybackStartedEvent(Track *track)
+    : Track(track)
+    {
+    }
+
+    Track *Track;
+};
+}}}
+
+Now, this data is useless without a way of notifying everyone about it. So, let's do that:
+{{{
+#include <algorithm>
+#include <map>
+#include <vector>
+
+#include <cassert>
+
+#include "Delegate.hpp"
+
+class EventBus
+{
+public:
+	~EventBus()
+	{
+		for(HandlerTable::iterator i = _table.begin(); i != _table.end(); ++i)
+			delete i->second;
+	}
+
+public:
+	template<typename Event>
+	void Publish(const Event& e)
+	{
+		Handlers* handlers = this->GetHandlers<Event>(false);
+		if(! handlers)
+			return;
+
+		Delegate<void (const Event&)> target;
+		for(Handlers::iterator i = handlers->begin(); i != handlers->end(); ++i)
+		{
+			target.SetMemento(*i);
+			target(e);
+		}
+	}
+
+	template<typename Event>
+	void Subscribe(void (*target)(const Event&))
+	{
+		assert(target != 0);
+		if(target == 0)
+			return;
+
+		Handlers* handlers = this->GetHandlers<Event>(true);
+		handlers->push_back(Delegate<void (const Event&)>(target).GetMemento());
+	}
+
+	template<typename Class, typename Event>
+	void Subscribe(Class* instance, void (Class::* target)(const Event&))
+	{
+		assert(instance != 0);
+		assert(target != 0);
+		if(instance == 0 || target == 0)
+			return;
+
+		Handlers* handlers = this->GetHandlers<Event>(true);
+		handlers->push_back(Delegate<void (const Event&)>(instance, target).GetMemento());
+	}
+	
+	template<typename Event>
+	void Unsubscribe(void (*target)(const Event&))
+	{
+		assert(target != 0);
+		if(target == 0)
+			return;
+
+		Handlers* handlers = this->GetHandlers<Event>(false);
+		if(! handlers)
+			return;
+
+		Handlers::iterator i = std::find(handlers->begin(), handlers->end(), Delegate<void (Event&)>(target).GetMemento());
+		if(i == handlers->end())
+			return;
+
+		handlers->erase(i);
+	}
+
+	template<typename Class, typename Event>
+	void Unsubscribe(Class* instance, void (Class::* target)(const Event&))
+	{
+		assert(instance != 0);
+		assert(target != 0);
+		if(instance == 0 || target == 0)
+			return;
+
+		Handlers* handlers = this->GetHandlers<Event>(false);
+		if(! handlers)
+			return;
+
+		Handlers::iterator i = std::find(handlers->begin(), handlers->end(), Delegate<void (Event&)>(instance, target).GetMemento());
+		if(i == handlers->end())
+			return;
+
+		handlers->erase(i);
+	}
+
+
+private:
+	typedef std::vector<Internal::DelegateMemento>	Handlers;
+	typedef std::map<const char*, Handlers*>		HandlerTable;
+
+private:
+	template<typename Event>
+	Handlers* GetHandlers(bool createIfNotPresent)
+	{
+		const char* key = typeid(Event).raw_name();
+
+		HandlerTable::iterator i = _table.find(key);
+		if(i == _table.end())
+		{
+			if(! createIfNotPresent)
+				return 0;
+
+			Handlers* handlers = new Handlers();
+			handlers->reserve(4);	// wild-ass guess.
+
+			std::pair<HandlerTable::iterator, bool> result = _table.insert(std::make_pair(key, handlers));
+			i = result.first;
+		}
+
+		return i->second;
+	}
+
+private:
+	HandlerTable _table;
+};
+}}}
+
+Anyway, let's see how it's actually used, first from the handler side:
+{{{
+class UIComponent
+{
+    UIComponent(EventBus* bus)
+    {
+        // Tell the bus we're interested in receiving these events.
+        // The event type is inferred from the argument list of OnPlaybackStarted.
+        bus->Subscribe(this, &UIComponent::OnPlaybackStarted);
+    }
+
+    void OnPlaybackStarted(const PlaybackStartedEvent& e)
+    {
+	_presenter.OnPlaybackStarted(e.Track);
+    }
+};
+}}}
+
+And now from someone who wants to Publish() the Event:
+{{{
+// Passing events as const-ref allows us to create and fire in a single line:
+_bus->Publish(PlaybackStartedEvent(currentTrack));
+}}}

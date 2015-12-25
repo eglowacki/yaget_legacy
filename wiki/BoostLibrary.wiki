@@ -1,0 +1,28 @@
+== Notes ==
+  * Current Versions: 1.44
+  * [http://www.boost.org/users/download/#repository Download Page]
+  * Entire boost source from SVN
+    * http://svn.boost.org/svn/boost/trunk
+
+=== Build ===
+  * If you have more than one Python packages installed, adjust *$(YAGET_ROOT_FOLDER)\packages\boost\tools\build\v2\user-config.jam* file to include *using python : 2.5 ;*, or whatever version you have.
+  * Add *using mpi ;* to *user-config.jam* file.
+  * Navigate to *$(YAGET_ROOT_FOLDER)\packages\boost* folder and execute this command:
+    * *bootstrap.bat*
+      * That will build *bjam.exe* in the same directory.
+    * *bjam* --toolset=*msvc* stage variant=*release* threading=*multi* link=*static*
+    * *bjam* --toolset=*msvc* stage variant=*debug* threading=*multi* link=*static*
+  * That will generate lib and dll (if any) files in *$(YAGET_ROOT_FOLDER)\packages\boost\stage\lib*.
+
+=== bjam options ===
+
+|| *Feature* || *Allowed values* || *Notes* ||
+|| variant || debug,release || ||
+|| link || shared,static || Determines if Boost.Build creates shared or static libraries ||
+|| threading || single,multi || Cause the produced binaries to be thread-safe. This requires proper support in the source code itself. ||
+|| define || (Arbitrary string) || Additional macro definitions for C and C++ compilers. The string should be either SYMBOL or SYMBOL=VALUE ||
+|| runtime-link || shared,static || Determines if shared or static version of C and C++ runtimes should be used. ||
+
+
+=== Using ===
+  * Add *boost_Use* property sheet to your project. 

@@ -1,0 +1,14 @@
+== wxWidgets Library ==
+  * Entire wxWidgets source is from CVS
+    * CVS: :pserver:anoncvs:anoncvs@cvs.wxwidgets.org:/pack/cvsroots/wxwidgets (Password: anoncvs).
+      * http://www.wxwindows.org/develop/cvs.htm
+  * [http://www.wxwindows.org/docs docs]
+=== Build wxWidgets ===
+*Using VC++ 2005 (8.0)*
+==== Using make file ====
+  * Navigate to *build\msw* folder
+    * Start VC++ 8.0 DOS box
+    * type for debug version:
+      * nmake -f makefile.vc *MONOLITHIC*=1 *UNICODE*=0 *SHARED*=1 *VENDOR*=yaget *BUILD*=debug
+    * and for release version:
+      * nmake -f makefile.vc *MONOLITHIC*=1 *UNICODE*=0 *SHARED*=1 *VENDOR*=yaget *BUILD*=release
