@@ -1,0 +1,2 @@
+﻿; unit test output
+YAGET_RUN_FOLDER=$(YAGET_ROOT_FOLDER)\branch\$(YAGET_BRANCH_FOLDER)\bin\UT_$(ConfigurationName)\

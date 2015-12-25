@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utility", "Utility.vcproj", "{26AE5873-6CB4-4480-9F2C-8CD2E7B6FE83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Yaget Env", "Yaget Env", "{0C3F9BF4-8260-4790-A25A-0F90C4A0A03D}"
+	ProjectSection(SolutionItems) = preProject
+		UT_Utility.slnenv = UT_Utility.slnenv
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UT_Utilities", "UT_Utilities.vcproj", "{468D0719-9585-4850-9F2A-7661593D159E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{26AE5873-6CB4-4480-9F2C-8CD2E7B6FE83} = {26AE5873-6CB4-4480-9F2C-8CD2E7B6FE83}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26AE5873-6CB4-4480-9F2C-8CD2E7B6FE83}.Debug|Win32.ActiveCfg = Debug|Win32
+		{26AE5873-6CB4-4480-9F2C-8CD2E7B6FE83}.Debug|Win32.Build.0 = Debug|Win32
+		{26AE5873-6CB4-4480-9F2C-8CD2E7B6FE83}.Release|Win32.ActiveCfg = Release|Win32
+		{26AE5873-6CB4-4480-9F2C-8CD2E7B6FE83}.Release|Win32.Build.0 = Release|Win32
+		{468D0719-9585-4850-9F2A-7661593D159E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{468D0719-9585-4850-9F2A-7661593D159E}.Debug|Win32.Build.0 = Debug|Win32
+		{468D0719-9585-4850-9F2A-7661593D159E}.Release|Win32.ActiveCfg = Release|Win32
+		{468D0719-9585-4850-9F2A-7661593D159E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+    ProjectType="Visual C++"
+    Version="8.00"
+    Name="boost_Use"
+    >
+    <Tool
+        Name="VCCLCompilerTool"
+        AdditionalIncludeDirectories="$(YAGET_ROOT_FOLDER)\Packages\boost"
+        PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE"
+    />
+    <Tool
+        Name="VCLinkerTool"
+        AdditionalLibraryDirectories="$(YAGET_ROOT_FOLDER)\Packages\boost\stage\lib"
+        ImportLibrary=""
+    />
+</VisualStudioPropertySheet>

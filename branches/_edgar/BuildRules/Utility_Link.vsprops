@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+    ProjectType="Visual C++"
+    Version="8.00"
+    Name="Utility_Link"
+    InheritedPropertySheets=".\Utility_Use.vsprops;"
+    >
+    <Tool
+        Name="VCLinkerTool"
+        AdditionalDependencies="Utility$(YAGET_DEBUG_SUFFIX).lib"
+        AdditionalLibraryDirectories="&quot;$(YAGET_ROOT_FOLDER)\branch\$(YAGET_BRANCH_FOLDER)\lib&quot;"
+    />
+</VisualStudioPropertySheet>
