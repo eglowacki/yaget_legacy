@@ -7,7 +7,7 @@ There are several [http://code.google.com/p/yaget/wiki/Packages Packages] used b
 
 
 === Property Sheets ===
-Property sheets are located at $(YAGET_ROOT_FOLDER)\branch\$(YAGET_BRANCH_FOLDER)\!BuildRules. 
+Property sheets are located at $(YAGET_ROOT_FOLDER)\branch\$(YAGET_BRANCH_FOLDER)\BuildRules. 
 * Order and Description
 ** Debug and Release (required)
 *** Adjust user macro, this should point to the root of your project and is shared among branches.
