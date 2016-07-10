@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PCH">
+      <UniqueIdentifier>{36fe1d85-f767-4e88-9115-b5d46be653cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vector Files">
+      <UniqueIdentifier>{82928257-413c-457f-a634-8e2c8d78766e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Matrix Files">
+      <UniqueIdentifier>{36e27ddd-f303-4864-8449-455f1824e32f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base Files">
+      <UniqueIdentifier>{4f2e84fa-c11b-4172-8c67-0eef6620ba38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quaternion Files">
+      <UniqueIdentifier>{239ac5fa-bd28-4f20-9408-000a5b9f0f2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Convert To Files">
+      <UniqueIdentifier>{0da3473a-b4f9-4a23-a8b4-1a2d8ae694dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility Files">
+      <UniqueIdentifier>{9739c9b5-2433-4451-8c02-80b4325f08ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Precompiled.cpp">
+      <Filter>PCH</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Vector.cpp">
+      <Filter>Vector Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Matrix.cpp">
+      <Filter>Matrix Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MathBase.cpp">
+      <Filter>Base Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Quat.cpp">
+      <Filter>Quaternion Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Bounding.cpp">
+      <Filter>Convert To Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Intersections.cpp">
+      <Filter>Convert To Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Util.cpp">
+      <Filter>Convert To Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\Precompiled.h">
+      <Filter>PCH</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Math\Vector.h">
+      <Filter>Vector Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Math\VectorConst.h">
+      <Filter>Vector Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Math\VectorImpl.h">
+      <Filter>Vector Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Math\Matrix.h">
+      <Filter>Matrix Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Math\MatrixConst.h">
+      <Filter>Matrix Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Math\MatrixImpl.h">
+      <Filter>Matrix Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Math\MathBase.h">
+      <Filter>Base Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Math\Quat.h">
+      <Filter>Quaternion Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\QuatImpl.h">
+      <Filter>Quaternion Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Math\Bounding.h">
+      <Filter>Convert To Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Math\Intersections.h">
+      <Filter>Convert To Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Math\Util.h">
+      <Filter>Convert To Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Math\Ray.h">
+      <Filter>Utility Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
