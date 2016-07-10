@@ -1,8 +1,16 @@
 #include "Precompiled.h"
+#include <cstdio>
+#include "Math/Quat.h"
+
+std::string eg::Quaternion::Print() const
+{
+    static char WorkBuffer[256];
+    sprintf(WorkBuffer, "[x: %.2f, y: %.2fm z: %.2f, w: %.2f]", x, y, z, w);
+    return std::string(WorkBuffer);
+}
+
 
 #if 0
-#include "Quat.h"
-
 
 const UOMath::mthQuat&  UOMath::mthQuat::Identity()
 {

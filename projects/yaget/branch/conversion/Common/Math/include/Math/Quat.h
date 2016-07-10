@@ -98,6 +98,8 @@ namespace eg
         //! Decompose quaternion into axis and angle
         void Decompose(Vector3& axis, float& angle) const;
 
+        std::string Print() const;
+
         friend std::ostream& operator <<(std::ostream& o, const Quaternion& value);
         friend std::istream& operator >>(std::istream& i, Quaternion& value);
 

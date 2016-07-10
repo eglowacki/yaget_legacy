@@ -9,7 +9,7 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;TIXML_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>cximage.lib;tinyxml$(PACKAGE_DEBUG_SUFFIX)_STL.lib;zlib.lib;Tiff.lib;png.lib;mng.lib;Jpeg.lib;jbig.lib;jasper.lib;libdcr.lib;vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(YAGET_ROOT_FOLDER)\Packages\boost\stage\lib;$(YAGET_ROOT_FOLDER)\Packages\tinyxml\$(Configuration)_STL;$(YAGET_ROOT_FOLDER)\Packages\CxImage\CxImage\$(Configuration);$(YAGET_ROOT_FOLDER)\Packages\CxImage\zlib\$(Configuration);$(YAGET_ROOT_FOLDER)\Packages\CxImage\tiff\$(Configuration);$(YAGET_ROOT_FOLDER)\Packages\CxImage\png\$(Configuration);$(YAGET_ROOT_FOLDER)\Packages\CxImage\mng\$(Configuration);$(YAGET_ROOT_FOLDER)\Packages\CxImage\jpeg\$(Configuration);$(YAGET_ROOT_FOLDER)\Packages\CxImage\jbig\$(Configuration);$(YAGET_ROOT_FOLDER)\Packages\CxImage\jasper\$(Configuration);$(YAGET_ROOT_FOLDER)\Packages\CxImage\raw\$(Configuration);$(YAGET_ROOT_FOLDER)\Packages\vld\src\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ImportLibrary>
       </ImportLibrary>

@@ -2,25 +2,25 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="PCH">
-      <UniqueIdentifier>{36fe1d85-f767-4e88-9115-b5d46be653cd}</UniqueIdentifier>
+      <UniqueIdentifier>{1cf97d94-b88d-415b-a0f9-ac4d1073bc8c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Vector Files">
-      <UniqueIdentifier>{82928257-413c-457f-a634-8e2c8d78766e}</UniqueIdentifier>
+      <UniqueIdentifier>{011d4218-17b4-4e08-8219-8982ae30db48}</UniqueIdentifier>
     </Filter>
     <Filter Include="Matrix Files">
-      <UniqueIdentifier>{36e27ddd-f303-4864-8449-455f1824e32f}</UniqueIdentifier>
+      <UniqueIdentifier>{00e2e497-274b-4997-b216-31c05db3bd63}</UniqueIdentifier>
     </Filter>
     <Filter Include="Base Files">
-      <UniqueIdentifier>{4f2e84fa-c11b-4172-8c67-0eef6620ba38}</UniqueIdentifier>
+      <UniqueIdentifier>{34e0debf-178f-4ad0-ac6e-457335a36bc1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Quaternion Files">
-      <UniqueIdentifier>{239ac5fa-bd28-4f20-9408-000a5b9f0f2f}</UniqueIdentifier>
+      <UniqueIdentifier>{4fbcc570-2cc4-4965-b398-8b7d9d527bde}</UniqueIdentifier>
     </Filter>
     <Filter Include="Convert To Files">
-      <UniqueIdentifier>{0da3473a-b4f9-4a23-a8b4-1a2d8ae694dc}</UniqueIdentifier>
+      <UniqueIdentifier>{fdf69828-bc52-4ffc-945e-0b2a51d208ba}</UniqueIdentifier>
     </Filter>
     <Filter Include="Utility Files">
-      <UniqueIdentifier>{9739c9b5-2433-4451-8c02-80b4325f08ea}</UniqueIdentifier>
+      <UniqueIdentifier>{a1fb5457-4458-4286-829f-3a7ad51bce4f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -36,8 +36,8 @@ namespace eg
     //! Very large number;
     const float kBigNumber(1e37f);
 
-    //! RADIAN defined as float.
-    typedef float RADIAN;
+    //! radian_t defined as float.
+    typedef float radian_t;
 
     //! Convert from Degrees to Radians.
     float DegToRad(float a);
@@ -46,19 +46,19 @@ namespace eg
     float RadToDeg(float a);
 
     //! Sin function using radians.
-    float Sin(RADIAN a);
+    float Sin(radian_t a);
 
     //! Sin function using degrees.
     float SinD(float a);
 
     //! Cos function using radians.
-    float Cos(RADIAN a);
+    float Cos(radian_t a);
 
     //! Cos function using degrees.
 
     float CosD(float a);
     //! Tan function using radians.
-    float Tan(RADIAN a);
+    float Tan(radian_t a);
 
     //! Tan function using degrees.
     float TanD(float a);
@@ -70,7 +70,7 @@ namespace eg
     float Log(float a);
 
     //! Acos function
-    float Acos(RADIAN a);
+    float Acos(radian_t a);
 
     float AcosD(float a);
 
@@ -119,7 +119,7 @@ namespace eg
         return a * 57.29577951f;
     }
 
-    inline float Sin(RADIAN a)
+    inline float Sin(radian_t a)
     {
         return sinf(a);
     }
@@ -129,7 +129,7 @@ namespace eg
         return Sin(DegToRad(a));
     }
 
-    inline float Cos(RADIAN a)
+    inline float Cos(radian_t a)
     {
         return cosf(a);
     }
@@ -139,7 +139,7 @@ namespace eg
         return Cos(DegToRad(a));
     }
 
-    inline float Tan(RADIAN a)
+    inline float Tan(radian_t a)
     {
         return tanf(a);
     }
@@ -159,7 +159,7 @@ namespace eg
         return logf(a);
     }
 
-    inline float Acos(RADIAN a)
+    inline float Acos(radian_t a)
     {
         return acosf(a);
     }
@@ -175,7 +175,6 @@ namespace eg
         c_out = Cos(a);
     }
 
-
     inline bool IsAEq(float a, float b, float error)
     {
         return(fabsf(a - b) < error);
@@ -188,12 +187,12 @@ namespace eg
 
     inline float Sqrt(float a)
     {
-        return(float)sqrt(a);
+        return static_cast<float>(sqrt(a));
     }
 
     inline int Ceil(float a)
     {
-        return(int)ceil(a);
+        return static_cast<int>(ceil(a));
     }
 
     inline float Abs(float a)
@@ -203,12 +202,12 @@ namespace eg
 
     inline float Uint8Tofloat(unsigned char value)
     {
-        return (float)((char)(value - 128));
+        return static_cast<float>(static_cast<char>(value) - 128);
     }
 
     inline unsigned char floatToUint8(float value)
     {
-        return (unsigned char)((char)value + 128);
+        return static_cast<unsigned char>(static_cast<char>(value) + 128);
     }
 
 

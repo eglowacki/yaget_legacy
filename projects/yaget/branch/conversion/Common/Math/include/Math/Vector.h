@@ -163,7 +163,7 @@ namespace eg
         Vector2& wrap();
 
         //! Return string representation of this vector in the form [x: %.2f, y: %.2f, z: %.2f].
-        //std::string Print() const;
+        std::string Print() const;
 
         /*!
         This will parse the string into 2 floats.
@@ -310,7 +310,7 @@ namespace eg
         Vector3& wrap();
 
         //! Return string representation of this vector in the form [x: %.2f, y: %.2f, z: %.2f].
-        //std::string Print() const;
+        std::string Print() const;
         /*!
         This will parse the string into 3 floats.
         \param a_Value string i the format [%s, %s, %s], which converts to x, y, z.
@@ -469,7 +469,7 @@ namespace eg
         Vector4& wrap();
 
         //! Return string representation of this vector in the form [x: %.2f, y: %.2f, z: %.2f, w: %.2f].
-        //std::string Print() const;
+        std::string Print() const;
         /*!
         This will parse the string into 3 floats.
         \param a_Value string i the format [%s, %s, %s, %s], which converts to x, y, z, w.

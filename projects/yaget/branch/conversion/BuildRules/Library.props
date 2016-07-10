@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="UserMacros">
-    <YAGET_RUN_FOLDER>$(YAGET_ROOT_FOLDER)\branch\$(YAGET_BRANCH_FOLDER)\bin\ups_$(Configuration)\</YAGET_RUN_FOLDER>
+    <YAGET_RUN_FOLDER>$(YAGET_ROOT_FOLDER)\branch\$(YAGET_BRANCH_FOLDER)\bin\$(ProjectName)$(Configuration)\</YAGET_RUN_FOLDER>
   </PropertyGroup>
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>

@@ -8,13 +8,13 @@ namespace eg {
 //! This will return random number from 0 to 1
 float GetRandom()
 {
-	return (float)rand()/(float)RAND_MAX;
+	return static_cast<float>(rand()) / RAND_MAX;
 }
 
 
 float GetRandomRange(float lowValue, float hiValue)
 {
-	float t = GetRandom();
+    float t = GetRandom();
 	return (hiValue - lowValue) * t + lowValue;
 }
 
@@ -24,9 +24,9 @@ int GetDice(int numberSides)
 {
 	float value = GetRandom();
 	// and now scale to fit within MinRange and MaxRange
-	float newResult = ((float)(numberSides-1) * value);
+	float newResult = (numberSides-1) * value;
 	// we need to round it to the nearest integer
-	return (int)(newResult + 0.5f);
+	return static_cast<int>(newResult + 0.5f);
 }
 
 

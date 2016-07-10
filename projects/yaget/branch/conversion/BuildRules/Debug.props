@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="UserMacros">
-    <YAGET_ROOT_FOLDER>p:\Yaget</YAGET_ROOT_FOLDER>
+    <YAGET_ROOT_FOLDER>d:\Edgar\yaget_legacy\projects\yaget</YAGET_ROOT_FOLDER>
     <YAGET_DEBUG_SUFFIX>_d</YAGET_DEBUG_SUFFIX>
     <PACKAGE_DEBUG_SUFFIX>d</PACKAGE_DEBUG_SUFFIX>
   </PropertyGroup>

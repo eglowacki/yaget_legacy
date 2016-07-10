@@ -4,7 +4,6 @@
 
 namespace eg {
 
-#if 0
 
 ////////////////////////////////////////////////////////////
 // Miscellaneous vector functions
@@ -46,8 +45,9 @@ std::string Vector4::Print() const
 	sprintf(WorkBuffer, "[x: %.2f, y: %.2f, z: %.2f, w: %.2f]", x, y, z, w);
 	return std::string(WorkBuffer);
 }
-//#endif // 0
 
+
+#if 0
 
 void Vector3::set(const char *pValue)
 {
