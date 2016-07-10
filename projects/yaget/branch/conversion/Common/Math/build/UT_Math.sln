@@ -1,12 +1,14 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UT_Math", "UT_Math.vcproj", "{6FF7CF55-4E40-4B57-ABA2-74EC10151E91}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UT_Math", "UT_Math.vcxproj", "{6FF7CF55-4E40-4B57-ABA2-74EC10151E91}"
 	ProjectSection(ProjectDependencies) = postProject
 		{40A67A5C-56F7-4538-97BC-C6BAAF5A98FD} = {40A67A5C-56F7-4538-97BC-C6BAAF5A98FD}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Math", "Math.vcproj", "{40A67A5C-56F7-4538-97BC-C6BAAF5A98FD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Math", "Math.vcxproj", "{40A67A5C-56F7-4538-97BC-C6BAAF5A98FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
