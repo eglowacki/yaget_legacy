@@ -52,6 +52,10 @@
     <OutDir>$(YAGET_ROOT_FOLDER)\branch\$(YAGET_BRANCH_FOLDER)\lib\</OutDir>
     <TargetName>$(ProjectName)$(YAGET_DEBUG_SUFFIX)</TargetName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(YAGET_ROOT_FOLDER)\branch\$(YAGET_BRANCH_FOLDER)\lib\</OutDir>
+    <TargetName>$(ProjectName)$(YAGET_DEBUG_SUFFIX)</TargetName>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
