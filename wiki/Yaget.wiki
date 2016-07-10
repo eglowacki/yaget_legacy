@@ -8,22 +8,22 @@ There are several [http://code.google.com/p/yaget/wiki/Packages Packages] used b
 
 === Property Sheets ===
 Property sheets are located at $(YAGET_ROOT_FOLDER)\branch\$(YAGET_BRANCH_FOLDER)\!BuildRules. 
-  * Order and Description
-    * Debug and Release (required)
-      * Adjust user macro, this should point to the root of your project and is shared among branches.
-        * *YAGET_ROOT_FOLDER* (c:\development\Yaget)
-      * Additional macros are:
-        * *YAGET_DEBUG_SUFFIX* and *PACKAGE_DEBUG_SUFFIX*
-    * Branch (required)
-      * Adjust user macro, this should contain name of your branch and its always unique to a branch you work in. It also should not be branched.
-        * *YAGET_BRANCH_FOLDER* (main)
-    * Library (required)
-      * This is manipulated by Yaget Build Environment Visual Studio 2008 plugin, where it sets the *YAGET_ROOT_FOLDER* user macro. For this to work properly, this property sheet must be set always for write.
-      * It sets !OutputDirectory and !IntermediateDirectory.
-    * boost_Use
-      * If you included any *!Math_Use* or *!Math_Link* property sheet, then boost_Use was also included.
-    * Project Properties for *Configuration Properties/General*:
-      * *Output Directory* and *Intermediate Directory* needs to be set to inherit.
+* Order and Description
+** Debug and Release (required)
+*** Adjust user macro, this should point to the root of your project and is shared among branches.
+**** *YAGET_ROOT_FOLDER* (c:\development\Yaget)
+*** Additional macros are:
+**** *YAGET_DEBUG_SUFFIX* and *PACKAGE_DEBUG_SUFFIX*
+** Branch (required)
+*** Adjust user macro, this should contain name of your branch and its always unique to a branch you work in. It also should not be branched.
+**** *YAGET_BRANCH_FOLDER* (main)
+** Library (required)
+*** This is manipulated by Yaget Build Environment Visual Studio 2008 plugin, where it sets the *YAGET_ROOT_FOLDER* user macro. For this to work properly, this property sheet must be set always for write.
+*** It sets !OutputDirectory and !IntermediateDirectory.
+** boost_Use
+*** If you included any *!Math_Use* or *!Math_Link* property sheet, then boost_Use was also included.
+** Project Properties for *Configuration Properties/General*:
+*** *Output Directory* and *Intermediate Directory* needs to be set to inherit.
 
 === Solution Items ===
   For each solution add *New Solution Folder* and add new file $(!SolutionName).slnenv with this content:
